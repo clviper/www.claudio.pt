@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Stills from a sensor</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+
+	<script src="js/jquery-1.7.1.min.js"></script>
+	<script src="js/jquery.fullscreen.min.js"></script>	
+	<script>
+$(document).ready(function() { 
+	$('#gallery').fullscreenGallery({        
+		// the parent container of the slide, we customize the CSS with it
+		containerClass: 'galleryContainer',
+		// the thumbnails' container 
+		thumbContainer: 'thumbContainer',  
+		// the parent container of the thumbnails, 
+		// we put the arrow buttons there
+		thumbParentContainer: 'thumbParentContainer',
+		// display how many thumbnails
+		thumbNum: 6,                  
+		// padding between each thumbnails
+		thumbPadding: 0,                  
+		// auto hide the thumbnails when mouse out
+		thumbAutoHide: true,                      
+		// auto delay slideshow or not
+		slideShow: true,              
+		// the delay second of the slideshow
+		slideShowDelay: 2000
+	});  
+}); 
+
+    </script>         
+                
+</head>
+<body> 
+	
+	<div id="gallery">
+	<div class="bigImages">
+		<ul>
+			<li><img src="images/norway.jpg" alt="the image" /></li>
+			<li><img src="images/norway2.jpg" alt="the image" /></li>
+			<li><img src="images/norway3.jpg" alt="the image" /></li>
+			<li><img src="images/acores1.jpg" alt="the image" /></li>
+			<li><img src="images/acores2.jpg" alt="the image" /></li>
+		</ul>                  
+		</div>          		
+		<div class="thumbnails">   			
+		<ul>   
+			<li><img src="images/thumbs/norway.jpg" alt="the image" /></li>
+			<li><img src="images/thumbs/norway2.jpg" alt="the image" /></li>
+			<li><img src="images/thumbs/norway3.jpg" alt="the image" /></li>
+			<li><img src="images/thumbs/acores1.jpg" alt="the image" /></li>
+			<li><img src="images/thumbs/acores2.jpg" alt="the image" /></li>
+		</ul>                                                               
+		</div>                		              
+	
+	</div>
+	
+	  
+</body>
+</html>
